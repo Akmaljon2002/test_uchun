@@ -1,6 +1,6 @@
 from django.db import models
 
-<<<<<<< HEAD
+# <<<<<<< HEAD
 
 class Aktyor(models.Model):
     ism = models.CharField(max_length=30)
@@ -15,11 +15,11 @@ class Kino(models.Model):
     janr = models.CharField(max_length=50)
     yil = models.DateField()
     aktyorlar = models.ManyToManyField(Aktyor)
-=======
+# =======
 class Tarif(models.Model):
     nom = models.CharField(max_length=30)
     muddat = models.CharField(max_length=30)
     narx = models.PositiveSmallIntegerField()
->>>>>>> 740431b9d14d83c242d2a3e129979a09a529ca0e
+# >>>>>>> 740431b9d14d83c242d2a3e129979a09a529ca0e
     def __str__(self):
         return self.nom
